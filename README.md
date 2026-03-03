@@ -2,7 +2,8 @@
 
 Servidor HTTP hecho desde cero en Go usando TCP, sin usar el paquete `net/http`. Permite registrar y hacer seguimiento de series de televisión, con una base de datos SQLite.
 
-![Series Tracker Screenshot](screenshot.png)
+<img width="1919" height="1024" alt="image" src="https://github.com/user-attachments/assets/58edceee-36a2-42a2-a443-a1438a3fd705" />
+
 
 ## Como correr el proyecto
 
@@ -12,22 +13,21 @@ go run .
 
 Luego abrir el navegador en: `http://localhost:8080`
 
-> Nota: usar `go run .` y no `go run main.go` porque el proyecto tiene varios archivos .go
 
 ## Estructura de archivos
 
 ```
 servidor-tcp-go/
-├── main.go         # Punto de entrada, inicia el servidor TCP
-├── handlers.go     # Maneja cada peticion HTTP (routing y logica)
-├── db.go           # Funciones para interactuar con la base de datos
-├── templates.go    # HTML de cada pagina
-├── static.go       # Sirve archivos estaticos (css, js, favicon)
+├── main.go         
+├── handlers.go     
+├── db.go           
+├── templates.go    
+├── static.go       
 ├── static/
-│   ├── style.css   # Estilos de la pagina
-│   ├── app.js      # JavaScript del cliente (fetch, delete)
-│   └── favicon.svg # Icono del sitio
-├── series.db       # Base de datos SQLite
+│   ├── style.css   
+│   ├── app.js     
+│   └── favicon.svg 
+├── series.db       
 └── README.md
 ```
 
